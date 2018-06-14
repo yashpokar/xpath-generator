@@ -1,4 +1,4 @@
-from excepts import HTTPResponseError
+from .excepts import HTTPResponseError
 import requests
 from lxml import html
 
@@ -95,14 +95,3 @@ class XPATHGenerator(object):
 
         return response.content
 
-
-if __name__ == '__main__':
-    generator = XPATHGenerator()
-    print generator\
-    .want('Ring-spun cotton fabric for extra softness')\
-    .refer('https://www.amazon.com/Champion-Classic-T-Shirt-Oatmeal-Heather/dp/B073R2C868/')\
-    .using(headers={
-        'Origin': 'https://www.amazon.com',
-        'Host': 'www.amazon.com',
-    })\
-    .generate()
