@@ -1,0 +1,18 @@
+#product-name {
+    font-size: 3rem;
+    font-weight: 900;
+}
+
+#product-name p {
+    font-weight: 400;
+    margin-top: 1rem;
+    border-top: 1px solid #999;
+    color: #666;
+    font-size: 1.2rem;
+    letter-spacing: 1.04px;
+}
+
+.product-price {
+    font-size: 1.3rem;
+    font-weight: 700;
+}
