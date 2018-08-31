@@ -1,0 +1,14 @@
+import Product
+from scrapy.loader import ItemLoader
+import scrapy
+
+
+class AmazonSpider(scrapy.Spider):
+
+	start_urls = ['{URL}']
+
+	def parse(self, response):
+		il = ItemLoader(Product(), response)
+		{XPATHS}
+
+		yield il.load_item()

@@ -1,4 +1,4 @@
-from .excepts import HTTPResponseError
+from excepts import HTTPResponseError
 import requests
 from lxml import html
 
@@ -40,7 +40,9 @@ class XPATHGenerator(object):
     def generate(self):
         self._content = self._fetch_web_page()
         self._start_trials()
-        return self._results
+        results = self._results
+        self._results = []
+        return results
 
     @property
     def selector(self):
@@ -94,4 +96,3 @@ class XPATHGenerator(object):
             ))
 
         return response.content
-
