@@ -1,3 +1,0 @@
-[console_scripts]
-genxpath = xpath_generator.cmd:execute
-
