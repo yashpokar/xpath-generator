@@ -1,5 +1,5 @@
 # xpath-generator
-Dynamic xpath building
+> Dynamic xpath building, goal is to automate the web scraping
 
 ``` pip install xpath_generator ```
 
