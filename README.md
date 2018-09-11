@@ -1,7 +1,7 @@
 # xpath-generator
 > Dynamic xpath building, goal is to automate the web scraping
-
-``` pip install xpath_generator ```
+git clone this repo
+``` pip install -e . ```
 
 Type into your command line
 ``` genxpath want="\$6.56 - \$57.17" refer="https://www.amazon.com/Champion-Classic-T-Shirt-Oatmeal-Heather/dp/B073R2C868/" ```
