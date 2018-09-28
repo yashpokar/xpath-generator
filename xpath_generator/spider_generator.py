@@ -1,5 +1,5 @@
 import os
-from xpath_generator import XPATHGenerator
+from .xpath_generator import XPATHGenerator
 
 
 class SpiderGenerator(object):
